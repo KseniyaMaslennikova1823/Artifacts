@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page3</title>
+    <script src="./dist/bundle.js"></script>
 </head>
 <body>
-    <div class="menu">
+    <div class="menu menu_page">
+        <div class="header__burger">
+            <img src="./src/img/menu.svg" alt="" style="width: 50px; height: 50px; color: white;">
+        </div>
+    
         <header class="header">
-            <a href="#" class="header__logo">
-                <svg width="65" height="20" fill="none" >
-                    <use xlink:href="./src/img/header/header.svg#logo"></use>
-                </svg>
-            </a>
+        <a href="#" class="header__logo">
+            <svg width="65" height="20" fill="none" >
+                <use xlink:href="./src/img/header/header.svg#logo"></use>
+            </svg>
+        </a>
             <nav>
                 <ul class="header__list">
                     <li class="header__item">
-                        <a href="index.html" class="header__link">Главная</a>
+                        <a href="#blog" class="header__link">Главная</a>
                     </li>
                     <li class="header__item">
                         <a href="#gallery" class="header__link">Галерея</a>
@@ -41,20 +46,20 @@
                     </svg>
                 </a>        
             </div>
-        </header>
+    </header>
     </div>
     <section class="container" style="height: 1600px;">
-            <div class="container__top" >
-                <h1 class="container__h1" style="padding-top: -50px; padding-left: 50px; width: 1000px;">
+            <div class="container__top" style="width: 100%;">
+                <h1 class="container__h1" style="padding-top: -50px; padding-left: 50px;">
                     11 объектов Всемирного природного наследия ЮНЕСКО в России
                 </h1>
                 
-                <p class="container__p" style="padding-top: 50px; padding-left: 50px; width: 1000px;">
+                <p class="container__p" style="padding-top: 50px; padding-left: 50px;">
                     <i>Наверняка вы хоть раз видели величественные горы и умиротворенные долины, извилистые реки и бескрайние леса, от которых перехватывало дыхание? На Земле много таких мест. Уникальные территории, которые важно сохранить в первозданном виде, попадают в список Всемирного природного наследия. Сейчас в нем 203 объекта, 11 из которых находятся в России. Только кажется, что это совсем немного: среди всех стран Россия занимает четвертое место по числу объектов вслед за Китаем, Америкой и Австралией.</i>
                 </p>
-                <img src="src/img/page3_img.jpg" alt="" style="width: 1000px;padding-top: 50px; padding-left: 50px;">
+                <img src="src/img/page3_img.jpg" alt="" style="width: 100%; padding-top: 50px; padding-left: 50px;">
                 
-                <p class="container__p" style="padding-top: 50px; padding-left: 50px; width: 1000px;">
+                <p class="container__p" style="padding-top: 50px; padding-left: 50px;">
                     К территории всемирного наследия относятся государственные природные заповедники и национальные парки. Ландшафты сменяются от высокогорных озер, ледников, арктических тундр до альпийских лугов, тайги, бескрайних степей и даже вулканов. 
                     Это не только невероятно красивые места, но и дом для многих видов животных и растений, редких и даже эндемичных — тех, которые не встречаются больше нигде в мире. Один из примеров — амурский тигр и даурский журавль. Некоторым растениям на территории природных памятников — не одна сотня лет. Возраст кедра в прителецкой тайге насчитывает больше шести столетий.
                 </p>
@@ -68,7 +73,7 @@
             </div>
     </section>
 
-    <div class="fon">
+    <div class="fon fon_page_two">
         <section id="feedback" class="section3">
                 <h2 class="section3__h2"><i>Помочь проекту</i></h2>
                 <p class="section3__p">

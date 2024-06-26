@@ -3,8 +3,8 @@ next = document.getElementById("rightBtn"),
 prev = document.getElementById("leftBtn");
 
 next.addEventListener("click", e => {
-    carousel.scrollBy(1110, 0);
+    carousel.scrollBy(277.5, 0);
 });
 prev.addEventListener("click", e => {
-    carousel.scrollBy(-1110, 0);  
+    carousel.scrollBy(-277.5, 0);  
 });
