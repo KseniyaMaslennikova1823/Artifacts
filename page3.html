@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page3</title>
-    <script src="./dist/bundle.js"></script>
+    <script defer src="./dist/bundle.js"></script>
 </head>
 <body>
-    <div class="menu menu_page">
-        <div class="header__burger">
-            <img src="./src/img/menu.svg" alt="" style="width: 50px; height: 50px; color: white;">
-        </div>
+    <div class="menu">
+        
     
         <header class="header">
+            <button class="header__burger-btn" id="burger">
+                <span></span><span></span><span></span>
+            </button>
         <a href="#" class="header__logo">
             <svg width="65" height="20" fill="none" >
                 <use xlink:href="./src/img/header/header.svg#logo"></use>
             </svg>
         </a>
+        <div class="menu__list">
             <nav>
                 <ul class="header__list">
                     <li class="header__item">
@@ -32,8 +34,17 @@
                     <li class="header__item">
                         <a href="#feedback" class="header__link">Контакты и помощь</a>
                     </li>
+
+                    <li class="header__item">
+                            <a href="#" class="header__link">Поиск</a>       
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Войти</a>     
+                    </li>
+
                 </ul>
             </nav>
+        </div>
             <div class="header_search_login">
                 <a href="#">
                     <svg width="24" height="24" fill="none">

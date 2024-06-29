@@ -44,10 +44,17 @@ body {
         display: flex;
         list-style-type: none;
         margin-left: -200px;
+        
     }
     &__item {
         margin-left: 32px;
         margin-right: 32px;
+        &:nth-child(5) {
+            display: none;
+        }
+        &:nth-child(6) {
+            display: none;
+        }
     }
     &__link {
         text-decoration: none;
@@ -73,9 +80,44 @@ body {
         }
     }
 }
-.header__burger {
+.header__burger-btn {
+
     display: none;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: $bg-dark;
+    position: relative;
+    z-index: 1001;
+    span {
+        position: absolute;
+        width: 40px;
+        height: 3px;
+        background-color: $white;
+        left: 5px;
+        transition: transform .5s, opacity .5s, background-color .5s;
+
+        &:nth-child(1) {
+            transform: translateY(-10px);
+        }
+
+        &:nth-child(3) {
+            transform: translateY(10px);
+        }
+    }
+
 }
+.header.open .header__burger-btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+}
+.header.open .header__burger-btn span:nth-child(2) {
+    opacity: 0;
+}
+.header.open .header__burger-btn span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+}
+
+
 .main {
     height: 490px;
     background-image: url("../img/background/1_1.png");
@@ -408,11 +450,67 @@ body {
 
 @media (max-width: 1130px) {
     .header {
-        display: none;
-        /*&__login {
+        &__logo {
+            display: none;
+        }
+        &_search_login {
+            display: none;
+        }
+        /*display: none;
+        &__login {
             margin-right: 25px;
         }*/
-            }    
+            }
+   /*.header__logo {
+        z-index: 1001;
+    }*/
+    .header__item {
+        &:nth-child(5) {
+            display: block;
+        }
+        &:nth-child(6) {
+            display: block;
+        }
+    }
+    .header__burger-btn {
+        display: block;
+    }
+    .header.open .header__burger-btn {
+        margin-top: 35px;
+        background-color: $bg-shade;
+
+    }
+    .menu__list {
+        margin-top: 10px;
+        margin-left: 10px;
+        position: absolute;
+        width: 250px;
+        left: -300px;
+        top: 0px;
+        background-color: $bg-shade; //$bg-shade
+        border-radius: 10px;
+        padding: 80px 20px 20px 20px;
+        transition: transform .5s;
+    }
+    .header__list {
+        display: block;
+        margin-left: -40px;
+    }
+    .header__link {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 400;
+        color: $white;
+        transition: .2s;
+        display: block;
+        padding: 10px 0;
+        &:hover {
+            color: $primary-green;
+        }
+    }
+    .header.open .menu__list {
+        transform: translateX(100%);
+    }
     .section {
         max-width: 832.5px;
     }

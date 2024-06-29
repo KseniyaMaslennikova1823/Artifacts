@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./dist/bundle.js"></script>
+    <script defer src="./dist/bundle.js"></script>
     <title>F&B</title>
   <script defer src="bundle.js"></script></head>
   <body>
@@ -11,15 +11,13 @@
         <button class="header__burger hamburger">
             <img src="./src/img/menu.svg" alt="" style="width: 50px; height: 50px; color: #1D2F30;">
         </button>
-        <button class="header__burger cross">
+        <button class="cross">
             <img src="./src/img/cross.svg" alt="" style="width: 50px; height: 50px; color: #1D2F30;">
         </button>
     
         <header class="header">
         <a href="#" class="header__logo">
-            <svg width="65" height="20" fill="none" >
-                <use xlink:href="./src/img/header/header.svg#logo"></use>
-            </svg>
+            <img src="./src/img/header/logo.svg" alt="">
         </a>
         <div class="menu__list">
             <nav>
@@ -46,7 +44,7 @@
                     </svg>
                 </a>
                 <a href="#" class="header__login">
-                    <svg width="24" height="24" fill="none">
+                    <svg width="24" height="24" >
                         <use xlink:href="./src/img/header/header.svg#log_in"></use>
                     </svg>
                 </a>        
